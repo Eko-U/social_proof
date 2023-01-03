@@ -1,0 +1,160 @@
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+
+  display: grid;
+  place-content: center;
+  gap: 3rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--very-dark-magenta);
+}
+
+.main {
+  max-width: 120rem;
+
+  display: grid;
+  gap: 70px;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+
+  font-size: 15px;
+}
+
+.review {
+  padding: 1.5rem;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--light-grayish-magenta);
+  border-radius: 7px;
+  color: var(--very-dark-magenta);
+  font-weight: 500;
+}
+
+.star {
+  height: 100%;
+}
+
+.product__content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.procuct__content--text {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.product__text {
+  width: 47%;
+  color: var(--dark-grayish-magenta);
+}
+
+.product__review {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product__review--reviews {
+  transform: translateX(-100px);
+}
+
+.product__review--reportguru {
+  transform: translateX(-50px);
+}
+
+.product__testimonials {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  justify-content: space-between;
+}
+
+.product__testimonial {
+  align-self: start;
+  padding: 1.9rem;
+  border-radius: .6rem;
+  background-color: var(--very-dark-magenta);
+  color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.product__testimonials--2 {
+  transform: translateY(2rem);
+}
+
+.product__testimonials--3 {
+  transform: translateY(4rem);
+}
+
+.client__user-profile {
+  display: grid;
+  column-gap: 1.5rem;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: auto auto;
+  align-items: center;
+}
+
+.client__image {
+  grid-row: 1 / -1;
+
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50rem;
+}
+
+.client__status {
+  color: var(--soft-pink);
+}
+
+.client__username {
+  font-weight: 500;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (max-width: 87.5em) {
+
+}
