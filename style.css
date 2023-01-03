@@ -27,13 +27,18 @@ body {
 
   display: grid;
   place-content: center;
-  gap: 3rem;
+  gap: 6rem;
+
+  position: relative;
+  z-index: 10;
+  background-color: var(--light-grayish-magenta); 
 }
 
 h1 {
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 1;
+  margin-bottom: 2rem;
   color: var(--very-dark-magenta);
 }
 
@@ -43,7 +48,7 @@ h1 {
   display: grid;
   gap: 70px;
   grid-template-columns: auto;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
 
   font-size: 15px;
 }
@@ -55,7 +60,7 @@ h1 {
   justify-content: center;
   align-items: center;
 
-  background-color: var(--light-grayish-magenta);
+  background-color: hsla(302, 10%, 53%, 0.164);
   border-radius: 7px;
   color: var(--very-dark-magenta);
   font-weight: 500;
@@ -154,7 +159,86 @@ h1 {
 color: hsl(228, 45%, 44%);
 }
 
+.bk-top,
+.bk-bottom {
+  position: absolute;
+  z-index: -1;
+}
+.bk-top {
+  top: 0;
+  left: 0;
+}
+.bk-bottom {
+  bottom: 0;
+  right: 0;
+}
 
-@media only screen and (max-width: 87.5em) {
+/** MEDIA QUERIES **/
 
+@media only screen and (max-width: 68.75em) {
+  .product__content {
+    grid-template-columns: 2fr 1.7fr;
+  }
+
+  .product__text {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 52.5em) {
+  body {
+    padding: 3rem;
+  }
+
+  .product__content {
+    align-content: start;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .product__testimonials--2 {
+    transform: translateY(0);
+  }
+
+  .product__testimonials--3 {
+    transform: translateY(0);
+  }
+
+  .product__review--reviews {
+    transform: translateX(0);
+  }
+
+  .product__review--reportguru {
+    transform: translateX(0);
+  }
+
+  .product__text {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .main {
+    gap: 3rem;
+  }
+
+  .product__content--text {
+    text-align: center;
+  }
+
+  .review {
+    flex-direction: column;
+    gap: .7rem;
+  }
+
+  .star {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media only screen and (max-width: 21.875em) {
+  h1 {
+    font-size: 4rem;
+  }
 }
