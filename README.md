@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Eko-U/social_proof](https://github.com/Eko-U/social_proof)
+- Solution URL: [https://github.com/Eko-U/social_proof/](https://github.com/Eko-U/social_proof)
 - Live Site URL: [https://eko-u.github.io/social_proof/](https://eko-u.github.io/social_proof/)
 
 ### Built with
