@@ -46,22 +46,22 @@ h1 {
   max-width: 120rem;
 
   display: grid;
-  gap: 70px;
+  gap: 7rem;
   grid-template-columns: auto;
   grid-template-rows: auto auto;
 
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .review {
   padding: 1.5rem;
   display: flex;
-  gap: 30px;
+  gap: 3rem;
   justify-content: center;
   align-items: center;
 
   background-color: hsla(302, 10%, 53%, 0.164);
-  border-radius: 7px;
+  border-radius: .7rem;
   color: var(--very-dark-magenta);
   font-weight: 500;
 }
@@ -74,7 +74,7 @@ h1 {
 .procuct__content--text {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 3.5rem;
 }
 
 .product__text {
@@ -85,15 +85,15 @@ h1 {
 .product__review {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .product__review--reviews {
-  transform: translateX(-100px);
+  transform: translateX(-10rem);
 }
 
 .product__review--reportguru {
-  transform: translateX(-50px);
+  transform: translateX(-5rem);
 }
 
 .product__testimonials {
@@ -148,7 +148,7 @@ h1 {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.4rem;
   text-align: center;
 }
 .attribution a {
