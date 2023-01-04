@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [(https://github.com/Eko-U/qr-code](https://github.com/Eko-U/qr-code)
-- Live Site URL: [https://eko-u.github.io/qr-code/](https://eko-u.github.io/qr-code/)
+- Solution URL: [https://github.com/Eko-U/social_proof](https://github.com/Eko-U/social_proof)
+- Live Site URL: [https://eko-u.github.io/social_proof/](https://eko-u.github.io/social_proof/)
 
 ### Built with
 
